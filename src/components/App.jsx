@@ -12,7 +12,7 @@ const NotFound = lazy(() => import('pages/notFound/NotFound'));
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="goit-react-hw-05-movies">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
